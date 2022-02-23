@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/BerkayMertt/AndroidStudioProjects/BookMarket/app/src/main/res/layout/activity_main.xml" value="0.2695035460992908" />
+        <entry key="..\:/android/BookMarket/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/android/BookMarket/app/src/main/res/layout/book_list_item_layout.xml" value="0.16077898550724637" />
       </map>
     </option>
   </component>
