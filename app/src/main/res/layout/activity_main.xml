@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/vvRowTitle"
+        android:id="@+id/vw_row_title"
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:background="@color/black"
@@ -26,7 +26,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tbTopBarTitle" />
 
-
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/vw_row_title"
+        android:id="@+id/rv_book_list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+    />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
