@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BookMarket</string>
+    <string name="tool_bar_title">Kitap Listesi</string>
 </resources>
