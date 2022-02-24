@@ -7,9 +7,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="202dp"
-        android:layout_height="161dp"
-        android:layout_marginTop="45dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="2:1"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -19,26 +20,24 @@
         android:id="@+id/tv_bookName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Book Name"
-        android:textSize="25dp"
-        android:layout_marginTop="35dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
+        android:layout_marginTop="16dp"
+        android:text="Book Name "
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@id/tv_bookPrice"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
 
     <TextView
         android:id="@+id/tv_bookPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="Book Price"
-        android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_bookName"
-        android:layout_marginTop="15dp"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bookName" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

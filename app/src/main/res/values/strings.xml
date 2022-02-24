@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">BookMarket</string>
     <string name="tool_bar_title">Kitap Listesi</string>
+    <string name="book_price">Fiyatı: %d TL</string>
+
 </resources>
