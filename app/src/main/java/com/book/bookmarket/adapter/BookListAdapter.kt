@@ -15,7 +15,7 @@ import com.bumptech.glide.Glide
 class BookListAdapter() :
 
     RecyclerView.Adapter<BookListAdapter.BookHolder>() {
-    var imageClickListener: () -> Unit = {}
+    var imageClickListener: (String,Int) -> Unit = { _,_-> }
     val booklist: ArrayList<Book> = arrayListOf()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookListAdapter.BookHolder {
         val binding =
@@ -41,7 +41,7 @@ class BookListAdapter() :
                     .load(book.bookImage)
                     .into(imageView)
                 imageView.setOnClickListener {
-                    imageClickListener()
+                    imageClickListener(book.bookName,book.bookPrice)
 
 
 

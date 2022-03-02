@@ -2,5 +2,6 @@
     <string name="app_name">BookMarket</string>
     <string name="tool_bar_title">Kitap Listesi</string>
     <string name="book_price">Fiyatı: %d TL</string>
+    <string name="book_summer">Moni resim yapmayı çok seven bir çocuktur. Bir gün okulda öğretmen, öğrencilerden zürafa resmi yapmalarını ister. Moni her ne kadar resim yapmayı çok sevse de nedense o gün biraz duraksar. Öğretmen durumu merak edip nedenini sorar. “Yoksa kalemlerini evde mi unuttun?” der. Moni ise o güne kadar hiç zürafa resmi yapmadığını, bundan dolayı zürafayı nasıl çizeceğini bilmediğini söyler. Arkadaşları harıl harıl zürafa resmi yaparken Moni’nin resim yapmaya girişmemesinin, zürafa resmi yapmayı denememesinin nedeni budur.</string>
 
 </resources>
