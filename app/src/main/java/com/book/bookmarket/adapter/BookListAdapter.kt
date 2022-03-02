@@ -1,16 +1,21 @@
 package com.book.bookmarket.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.book.bookmarket.BookDetails
+import com.book.bookmarket.MainActivity
 import com.book.bookmarket.R
 import com.book.bookmarket.databinding.BookListItemLayoutBinding
 import com.book.bookmarket.model.Book
 import com.bumptech.glide.Glide
 
 class BookListAdapter() :
+
     RecyclerView.Adapter<BookListAdapter.BookHolder>() {
+    var imageClickListener: () -> Unit = {}
     val booklist: ArrayList<Book> = arrayListOf()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookListAdapter.BookHolder {
         val binding =
@@ -35,6 +40,12 @@ class BookListAdapter() :
                 Glide.with(imageView.context)
                     .load(book.bookImage)
                     .into(imageView)
+                imageView.setOnClickListener {
+                    imageClickListener()
+
+
+
+                }
             }
         }
     }

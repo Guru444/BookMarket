@@ -1,7 +1,9 @@
 package com.book.bookmarket
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.book.bookmarket.adapter.BookListAdapter
@@ -30,6 +32,11 @@ class MainActivity : AppCompatActivity() {
         binding.rvBookList.adapter = adapter
 
         adapter.veriyiGetir(booklist)
+
+        adapter.imageClickListener = {
+            val intent = Intent(applicationContext,BookDetails::class.java)
+            startActivity(intent)
+        }
 
     }
 }
